@@ -1,0 +1,144 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list a {
+  color: black;
+  padding-top: 5px;
+}
+
+#nav-list a:hover, #nav-list a:focus {
+  text-decoration: none;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle{
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+ .container h2 {
+      text-align: center;
+      color: black;
+      margin-bottom: 30px;
+      margin-top: 0px;
+      font-weight: bold;
+  }
+ .container h4 {
+  padding : 0;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+ .container section {
+  color: black;
+  padding : 15px;
+  background-color: grey;
+  border: 1px solid black;
+  margin-bottom: 6vw;
+}
+
+
+#menu + div {
+  margin-bottom: 50px;
+}
+
+/********** Desktop only **********/
+@media (min-width: 992px) {
+  /* Header */
+  #header-nav {
+  padding: 5vw;
+  }
+
+  /* End Header */
+  .navbar-brand h1 {
+    font-size : 2em;
+  }
+
+}
+
+/********** Tablet only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  #header-nav {
+  padding: 5vw;
+  }
+
+  /* End Header */
+  .navbar-brand h1 {
+    font-size : 2em;
+  }
+
+}
+
+/********** Mobile only **********/
+@media (max-width: 767px) {
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav li { /* Collapsed nav menu text */
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding:0;
+  }
+
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+.container section {
+  margin-right : 10vw;
+  margin-left : 10vw;
+}
+
+  /* End Header */
+
+}
